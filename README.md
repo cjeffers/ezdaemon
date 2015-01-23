@@ -2,6 +2,7 @@
 `ezdaemon` makes Unix-y daemons real easy. Just import ezdaemon.daemonize
 and call it before whatever you want the daemon to be. A couple
 gotchas:
+
 1. It will disconnect your python process from stdin and stdout, so any
    print calls will not show up. This is because daemons are disconnected
    from any controlling terminal.
